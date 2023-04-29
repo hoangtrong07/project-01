@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
 html {
     font-size: 62.5%;
 }
@@ -59,6 +63,7 @@ a {
 .hero-wrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: relative;
     height: calc(100vh - 90px);
     background: #e6f0ff;
@@ -104,16 +109,12 @@ a {
     margin-left: 18px;
 }
 /* ==========================================Hero========================== */
-.hero {
-    margin-top: 130px;
-}
-
-.hero .info {
+.hero-wrap .info {
     /* chia tỉ lệ lấy 559px / 1110px ( của width content) */
     width: 51%;
 }
 
-.hero .sup-title {
+.hero-wrap .sup-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -121,7 +122,7 @@ a {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     font-weight: 700;
     font-size: 6.2rem;
@@ -129,7 +130,7 @@ a {
     color: #000336;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
